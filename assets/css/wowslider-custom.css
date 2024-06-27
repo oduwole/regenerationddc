@@ -1,0 +1,80 @@
+#wowslider-container {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: medium;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+    float: right;
+    /*added by dsonesuk*/
+    left: 0;
+    /*225px;  amended by dsonesuk*/
+    margin-bottom: 0;
+    margin-left: 10px;
+    /* auto; amended by dsonesuk*/
+    margin-right: 10px;
+    /* auto; amended by dsonesuk*/
+    margin-top: 0;
+    max-width: 314px;
+    position: relative;
+    z-index: 90;
+}
+
+#wowslider-container1 .ws_bullets {
+    bottom:1.5em;
+    left:50%;
+    }
+    #wowslider-container1 .ws_bullets div{
+    left:-50%;
+    }#wowslider-container1 .ws-title{
+    font: 1.3em 'Tenor Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 2em;
+    margin-right:10em;
+    z-index: 50;
+    background: none;
+    background-color:#1A2223;
+    color:#ffffff;
+    padding: 1em;
+    bottom: 40px;
+    top: auto;
+    opacity: 1;
+    }
+    #wowslider-container1 .ws-title div{
+    display:block;
+    margin-top:0.1em;
+    font-size: 1.3em;
+    line-height: 1.15em;
+    }
+    #wowslider-container1 .ws-title span{
+    font-size: 2em;
+    line-height: 1.35em;
+    text-transform:uppercase;
+    }#wowslider-container1 .ws_images > ul{
+    animation: wsBasic 95.2s infinite;
+    -moz-animation: wsBasic 95.2s infinite;
+    -webkit-animation: wsBasic 95.2s infinite;
+    }
