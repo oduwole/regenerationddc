@@ -2668,7 +2668,8 @@ textarea.is-invalid {
   display: inline-flex;
   border: none;
   text-align: center;
-  background-color: var(--theme-color);
+  /*background-color: var(--theme-color);*/
+  background-color: var(--e-global-color-uicore_primary);
   color: var(--white-color);
   font-family: var(--body-font);
   font-size: 16px;
@@ -14201,7 +14202,8 @@ span.select2-selection.select2-selection--single:focus {
 
 /* Contact Page 1---------------------------------- */
 .about-contact-grid.style2 {
-  background: var(--theme-color);
+  /*background: var(--theme-color);*/
+  background: var(--e-global-color-uicore_primary);
   border-radius: 8px;
 }
 
