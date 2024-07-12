@@ -1,3 +1,18 @@
+$.fn.serializeObject = function() {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name]) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
 $(function () {
     var form = ".ajax-contact";
     var invalidCls = "is-invalid";
@@ -52,7 +67,8 @@ $(function () {
      function sendContact(id) {
     $('[name=subject').attr('disabled', false);
         //var formData = $('#' + id).serialize();
-        var formData = $('#' + id).formToJson();
+        //var formData = $('#' + id).formToJson();
+        var formData = $('#' + id).serializeObject();
         console.log(formData);
 
     $('[name=subject').attr('disabled', true);
@@ -133,7 +149,7 @@ $(function () {
 
     $(form).on("submit", function (element) {
         element.preventDefault();
-        //console.log($(this).attr('id'))
+        console.log($(this).attr('id'))
         sendContact($(this).attr('id'));
     });
 })

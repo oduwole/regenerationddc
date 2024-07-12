@@ -37,6 +37,10 @@ app.get("/Joint-Venture.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "Joint-Venture.html"));
 });
 
+app.get("/data/regddc.json", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "data/regddc.json"));
+});
+
 
 app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "index.html"));
@@ -60,6 +64,7 @@ app.post('/sendmail', async (req, res) =>{
       var mailOptions = {
         from: 'segxy2708@hotmail.com',
         to: 'info@regenerationddc.com',
+        //to: 'segun@impartlab.com',
         subject: 'Inquiry: ' + req.body.subject + ' Automation Test',
         //text: JSON.stringify(req.body)
         html: messageBody
