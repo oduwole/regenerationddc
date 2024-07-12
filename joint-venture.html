@@ -227,32 +227,35 @@
                                 <div class="title-area mb-35 mt-45">
                                     <h3 class="about-card_title text-theme mb-40">Book Business Solutions</h3>
                                 </div>
-                                <form class="appointment-form ajax-contact me-xl-5">
+                                <form class="appointment-form ajax-contact" id="jv">
                                     <div class="row">
-                                        <div class="form-group style-border style-radius col-md-6">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
+                                        <div class="form-group style-border style-radius col-12">
+                                            <input type="text" class="form-control" name="name" id="name"
+                                                placeholder="Your Name*">
                                             <i class="fal fa-user"></i>
                                         </div>
-                                        <div class="form-group style-border style-radius col-md-6">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*">
+                                        <div class="form-group style-border style-radius col-12">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Your Email*">
                                             <i class="fal fa-envelope"></i>
                                         </div>
                                         <div class="form-group style-border style-radius col-md-12">
-                                            <select name="subject" id="subject" class="form-select">
-                                                <option value="" disabled selected hidden>Select Service Type</option>
-                                                <option value="Real Estate">Real Estate</option>
-                                                <option value="Apartment">Apartment</option>
-                                                <option value="Residencial">Residencial</option>
-                                                <option value="Deluxe">Deluxe</option>
+                                            <select name="subject" id="subject" class="form-select" disabled>
+                                                <option value="" hidden>Select Service Type</option>
+                                                <option value="Project Partnership">Project Partnership</option>
+                                                <option value="Co-Investment">Co-Investment</option>
+                                                <option value="Co-Ownership">Co-Ownership</option>
+                                                <option value="Joint Venture" selected>Joint Venture</option>
                                             </select>
                                             <i class="fal fa-angle-down"></i>
                                         </div>
                                         <div class="col-12 form-group style-border style-radius">
                                             <i class="far fa-comments"></i>
-                                            <textarea placeholder="Type Your Message" class="form-control"></textarea>
+                                            <textarea name="message" placeholder="Type Your Message" class="form-control"></textarea>
                                         </div>
                                         <div class="col-12 form-btn mt-4">
-                                            <button class="th-btn">Submit Message <span class="btn-icon"><img src="assets/img/icon/paper-plane.svg" alt="img"></span></button>
+                                            <button class="th-btn">Submit Message <span class="btn-icon"><img
+                                                        src="assets/img/icon/paper-plane.svg" alt="img"></span></button>
                                         </div>
                                     </div>
                                     <p class="form-messages mb-0 mt-3"></p>
@@ -546,6 +549,7 @@
     <script src="./assets/js/helper.min.js?ver=6.13.0" id="element-pack-helper-js"></script>
     <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script src="assets/js/formToJson.min.js"></script>
 </body>
 
 

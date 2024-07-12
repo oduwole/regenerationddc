@@ -11,11 +11,61 @@ $(function () {
         var valid;
         valid = validateContact();
         if (valid) {
+            console.log($(form).attr("action"));
             jQuery
                 .ajax({
-                    url: $(form).attr("action"),
+                    //url: $(form).attr("action"),
+                    url: 'sendmail',
                     data: formData,
                     type: "POST",
+                })
+                .done(function (response) {
+                    // Make sure that the formMessages div has the 'success' class.
+                    formMessages.removeClass("error");
+                    formMessages.addClass("success");
+                    // Set the message text.
+                    formMessages.text(response);
+                    // Clear the form.
+                    $(
+                        form +
+                        ' input:not([type="submit"]),' +
+                        form +
+                        " textarea"
+                    ).val("");
+                })
+                .fail(function (data) {
+                    // Make sure that the formMessages div has the 'error' class.
+                    formMessages.removeClass("success");
+                    formMessages.addClass("error");
+                    // Set the message text.
+                    if (data.responseText !== "") {
+                        formMessages.html(data.responseText);
+                    } else {
+                        formMessages.html(
+                            "Oops! An error occured and your message could not be sent."
+                        );
+                    }
+                });
+        }
+    }
+
+     function sendContact(id) {
+    $('[name=subject').attr('disabled', false);
+        //var formData = $('#' + id).serialize();
+        var formData = $('#' + id).formToJson();
+        console.log(formData);
+
+    $('[name=subject').attr('disabled', true);
+        var valid;
+        valid = validateContact();
+        if (valid) {
+            jQuery
+                .ajax({
+                    //url: $(form).attr("action"),
+                    url: 'sendmail',
+                    data: JSON.stringify(formData),
+                    type: "POST",
+                    contentType: 'application/json',
                 })
                 .done(function (response) {
                     // Make sure that the formMessages div has the 'success' class.
@@ -83,6 +133,7 @@ $(function () {
 
     $(form).on("submit", function (element) {
         element.preventDefault();
-        sendContact();
+        //console.log($(this).attr('id'))
+        sendContact($(this).attr('id'));
     });
 })

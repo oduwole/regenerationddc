@@ -580,14 +580,14 @@
                                                                     </div>
                                                                     <div
                                                                         class="form-group style-border style-radius col-md-12">
-                                                                        <input type="text" class="form-control" id="subject" disabled
-                                                                            name="email" placeholder="" value="Folajomi Court">
+                                                                        <input type="text" class="form-control" id="subject" 
+                                                                            name="subject" placeholder="" value="Folajomi Court">
                                                                         <i class="fal fa-angle-down"></i>
                                                                     </div>
                                                                     <div
                                                                         class="col-12 form-group style-border style-radius">
                                                                         <i class="far fa-comments"></i>
-                                                                        <textarea placeholder="Type Your Message e.g (I’m interested in the featured Folajomi Court and would like more details sent to my email address)"
+                                                                        <textarea name="message" placeholder="Type Your Message e.g (I'm interested in the featured Folajomi Court and would like more details sent to my email address)"
                                                                             class="form-control"></textarea>
                                                                     </div>
                                                                     <div class="col-12 form-btn mt-4">
@@ -655,15 +655,15 @@
                                                                                 </div>
                                                                                 <div
                                                                                     class="form-group style-border style-radius col-md-12">
-                                                                                    <input type="text" class="form-control" id="subject" disabled
-                                                                                        name="email" placeholder="" value="Rogers Cove">
+                                                                                    <input type="text" class="form-control" id="subject"
+                                                                                    name="subject"  placeholder="" value="Rogers Cove">
                                                                                     <i class="fal fa-angle-down"></i>
                                                                                 </div>
                                                                                 <div
                                                                                     class="col-12 form-group style-border style-radius">
                                                                                     <i class="far fa-comments"></i>
                                                                                     <textarea placeholder="Type Your Message e.g (I’m interested in the featured Rogers Cove and would like more details sent to my email address)"
-                                                                                        class="form-control"></textarea>
+                                                                                    name="message" class="form-control"></textarea>
                                                                                 </div>
                                                                                 <div class="col-12 form-btn mt-4">
                                                                                     <button class="th-btn">Submit Message <span
@@ -732,15 +732,15 @@
                                                                             </div>
                                                                             <div
                                                                                 class="form-group style-border style-radius col-md-12">
-                                                                                <input type="text" class="form-control" id="subject" disabled
-                                                                                    name="email" placeholder="" value="AW1 Court">
+                                                                                <input type="text" class="form-control" id="subject"
+                                                                                    name="subject" placeholder="" value="AW1 Court">
                                                                                 <i class="fal fa-angle-down"></i>
                                                                             </div>
                                                                             <div
                                                                                 class="col-12 form-group style-border style-radius">
                                                                                 <i class="far fa-comments"></i>
                                                                                 <textarea placeholder="Type Your Message e.g (I’m interested in the featured AW1 Court and would like more details sent to my email address)"
-                                                                                    class="form-control"></textarea>
+                                                                                name="message" class="form-control"></textarea>
                                                                             </div>
                                                                             <div class="col-12 form-btn mt-4">
                                                                                 <button class="th-btn">Submit Message <span
@@ -1378,9 +1378,12 @@
                 type: "inline",
                 midClick: true,
             });
+            $('[name=subject').attr('disabled', true);
         })
     </script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script src="assets/js/formToJson.min.js"></script>
+
 </body>
 
 </html>

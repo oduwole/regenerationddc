@@ -1,0 +1,24 @@
+{
+  "name": "Regeneration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oduwole/regenerationddc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oduwole/regenerationddc/issues"
+  },
+  "homepage": "https://github.com/oduwole/regenerationddc#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.14"
+  }
+}
