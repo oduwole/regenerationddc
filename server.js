@@ -1,7 +1,10 @@
 const express = require("express");
 const path = require("path");
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
 
+
+dotenv.config({path:'.env'})
 const app = express();
 
 app.use(express.json())
@@ -88,4 +91,4 @@ app.post('/sendmail', async (req, res) =>{
       }
 })
 
-app.listen(process.env.PORT || 8000, () => console.log("Server is up and running..."));
+app.listen(process.env.PORT || 8000, () => console.log("Server is up and running..." + process.env.PORT));
