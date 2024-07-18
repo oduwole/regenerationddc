@@ -31174,8 +31174,10 @@
   .u-black.u-sidenav:before,
   .u-container-layout.u-container-layout.u-black:before,
   .u-table-alt-black tr:nth-child(even) {
-    color: #ffffff;
-    background-color: #000000;
+    /*color: #ffffff;
+    background-color: #000000;*/
+    color: #000000;
+    background-color: #dfe1e6;
   }
   .u-input.u-black,
   .u-field-input.u-black,
@@ -35457,13 +35459,16 @@
   .u-button-style.u-border-white {
     border-color: #ffffff !important;
     color: #ffffff !important;
-    background-color: transparent !important;
+    /*background-color: transparent !important;*/
+    background-color: #0737b0 !important;
+    border-radius: 10px !important;
   }
   .u-button-style.u-border-white:hover,
   .u-button-style.u-border-white:focus {
     border-color: transparent !important;
     color: #e6e6e6 !important;
-    background-color: transparent !important;
+    /*background-color: transparent !important;*/
+    background-color: #4071ed !important;
   }
   .u-border-hover-white:hover,
   .u-border-hover-white:focus,
