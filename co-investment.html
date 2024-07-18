@@ -65,8 +65,9 @@
     <style>
 
     </style>
+    <link rel='stylesheet' id='elementor-post-45-css' href='./assets/css/nicepage.css' media='all' />
     <link rel='stylesheet' id='elementor-post-45-css' href='./assets/css/main.css' media='all' />
-    <!--<link rel='stylesheet' href='./assets/css/magnific-popup.min.css' media='all' />-->
+    <link rel='stylesheet' href='./assets/css/magnific-popup.min.css' media='all' />
     <link rel='stylesheet' id='uicore_global-css' href='./assets/css/uicore-global.css?ver=7428' media='all' />
     <link rel='stylesheet' href='./assets/css/aboutus.css' media='all' />
 
@@ -195,6 +196,7 @@
             <section class="space">
                 <div class="container">
                     <div class="row gx-40 gy-40">
+                        <!--
                         <div class="col-xl-4 col-lg-5 col-md-8">
                             <div class="th-team team-card style4">
                                 <div class="img-wrap">
@@ -203,13 +205,11 @@
                                     </div>
                                     <div class="th-social-wrap">
                                         <div class="th-social">
-                                            <!--<a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                            <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>-->
                                             <a target="_blank" href="https://twitter.com/@regenerationddc"><i class="fab fa-twitter"></i></a>
                                             <a target="_blank" href="https://youtube.com/@regenerationddc"><i class="fab fa-youtube"></i></a>
                                             <a target="_blank" href="https://instagram.com/@regeneration.ddc"><i class="fab fa-instagram"></i></a>
                                         </div>
-                                        <!--<a class="icon-btn" href="team-details.html"><img src="assets/img/icon/arrow-right.svg" alt="img"></a>-->
+                                        <a class="icon-btn" href="team-details.html"><img src="assets/img/icon/arrow-right.svg" alt="img"></a>
                                     </div>
                                 </div>
                                 <div class="team-card-content">
@@ -221,27 +221,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-7">
+                    -->
+                        <div class="col-xl-12 col-lg-7">
                             <div class="about-card">
-                                <h2 class="about-card_title text-theme mb-45">Co-Investment.</h2>
-                                <!--<div class="row gy-3">
-                                    <div class="col-md-6">
-                                        <ul class="team-about-list">
-                                            <li><strong>Position: </strong>Rental Property Expert</li>
-                                            <li><strong>Experience: </strong>15+ Years</li>
-                                            <li><strong>Locatotion: </strong>New Jersy, New York</li>
-                                            <li><strong>Practice Area: </strong>Property Seller</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="team-about-list">
-                                            <li><strong>Project Done: </strong>200+ Property</li>
-                                            <li><strong>Phone: </strong>+0123- 456 789</li>
-                                            <li><strong>Locatotion: </strong>New Jersy, New York</li>
-                                            <li><strong>Email: </strong>example@realar.com</li>
-                                        </ul>
-                                    </div>
-                                </div>-->
+                                <h3 class="about-card_title text-theme mb-45">CO-INVESTMENT.</h3>
                                 <p class="sec-text text-theme mt-30">This scheme affords you the opportunity to Invest in real estate with your friends, family or partners.
                                     It involves a group of entities (Friends, cooperatives, investment clubs) pulling funds together for a real estate investment venture. As the capital is raised collectively, it is much easier for individual member to participate without breaking the bank.
                                     
@@ -257,6 +240,11 @@
                                     </ul>
 
                                 </p>
+                                <a href="#proj"
+                                    class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-custom-font u-font-merriweather u-hover-none u-none u-btn-1 popup-content">I'm
+                                    Interested</a>
+                                <div class="white-popup mfp-hide" id="proj">
+
                                 <div class="title-area mb-35 mt-45">
                                     <h3 class="about-card_title text-theme mb-40">Book Business Solutions</h3>
                                 </div>
@@ -293,6 +281,7 @@
                                     </div>
                                     <p class="form-messages mb-0 mt-3"></p>
                                 </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -598,6 +587,36 @@
     <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script src="assets/js/formToJson.min.js"></script>
+    <script>
+        $(function () {
+           $(".popup-content").magnificPopup({
+               type: "inline",
+               midClick: true,
+           });
+           $('[name=subject').attr('disabled', true);
+           $('.searchAutoComplete').autoComplete({
+               resolverSettings: {
+                   url: 'data/regddc.json'
+               },
+               minLength: 2,
+               events: {
+                   search: function (qry, callback) {
+                       // let's do a custom ajax call
+                       $.ajax(
+                           'data/regddc.json',
+                           {
+                               data: { 'qry': qry }
+                           }
+                       ).done(function (res) {
+                           var result = res.filter(word=> word.toLowerCase().includes(qry.toLowerCase()));
+                           callback(result)
+                       });
+                   }
+               }
+           });
+       })
+   
+   </script>
 </body>
 
 
