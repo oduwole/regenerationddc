@@ -159,4 +159,69 @@ $(function () {
         console.log($(this).attr('id'))
         sendContact($(this).attr('id'));
     });
+
+
+    $('.searchAutoComplete').autoComplete({
+        resolverSettings: {
+            url: 'data/regddc.json'
+        },
+        minLength: 2,
+        events: {
+            search: function (qry, callback) {
+                // let's do a custom ajax call
+                $.ajax(
+                    'data/regddc.json',
+                    {
+                        data: { 'qry': qry }
+                    }
+                ).done(function (res) {
+                    var result = res.filter(word => word.toLowerCase().includes(qry.toLowerCase()));
+                    callback(result)
+                });
+            }
+        }
+    });
+
+    $('#subscribe').click(function(e){
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+        var email_addr = $('[name=search').val();
+        var formData = {
+            email: email_addr
+        }
+        jQuery
+        .ajax({
+            //url: $(form).attr("action"),
+            url: 'sendmail',
+            data: formData,
+            type: "POST",
+        })
+        .done(function (response) {
+            // Make sure that the formMessages div has the 'success' class.
+            console.log('message sent');
+
+            toastr.success('email sent to ' + email_addr + ' successfully');
+            $('[name=search').val('');
+        })
+        .fail(function (data) {
+            // Make sure that the formMessages div has the 'error' class.
+            toastr.error('error sending email to ' + email_addr + '');
+          
+        });
+    })
 })

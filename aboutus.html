@@ -33,6 +33,8 @@
 
     <link rel='stylesheet' id='font-style' href='./assets/css/font-style.css' media='all' />
     <link rel='stylesheet' id='bootstrap-style' href='./assets/css/bootstrap.min.css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.js.map" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--<link rel='stylesheet' id='google-fonts-1-css'
@@ -97,6 +99,22 @@
                                     src="./assets/img/Screenshot-2024-03-23-at-15.56.15.png" alt="regenerationddc" />
                             </a>
 
+                        </div>
+                        <div class="uicore-brandings">
+
+                            <form class="row row-cols-lg-auto">
+                                <div class="inner-form col-12">
+                                    <div class="input-field first-wrap">
+                                        <input id="search" type="text" placeholder="What are you looking for?"
+                                            class="searchAutoComplete" autocomplete="off" style=" height: 33px;">
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-search" style=" height: 33px;" type="button">Search</button>
+                                </div>
+
+                            </form>
                         </div>
                         <div class='uicore-nav-menu'>
                             <div class="uicore-menu-container uicore-nav">
@@ -228,8 +246,8 @@
                         <div class="row gy-40 justify-content-between align-items-center">
                             <div class="col-lg-12">
                                 <div class="title-area mb-0">
-                                    <h2 class="sec-title text-theme mb-2">WHO WE ARE</h2>
-                                    <p class="mb-0 text-theme">Regeneration is a full-service design, construction and
+                                    <h2 class="sec-title text-theme mb-2"><b>WHO WE ARE</b></h2>
+                                    <p class="mb-0 text-theme ui-menu-item-wrapper">Regeneration is a full-service design, construction and
                                         development firm using our principles of value addition and sustainability to
                                         provide innovative and cutting-edge products and services on residential,
 
@@ -275,7 +293,7 @@
                                 <p class="text-theme"></p>
                             </div>
                             <div class="col-lg-12">
-                                <h3>Vision</h3>
+                                <h3 class=" text-theme"><b>VISION</b></h3>
                                 <p class="text-theme">To be an international built environment leader/driver of high
                                     repute</p>
                                 <!--<div class="about-wrap2 style-theme mt-50">
@@ -301,34 +319,34 @@
                             <!--<div class="col-lg-5"></div>
                             <div class="col-lg-5"></div>-->
                             <div class="col-lg-12">
-                                <h3>Mission</h3>
+                                <h3 class="text-theme"> <b>MISSION</b></h3>
                                 <p class="text-theme">
                                     Our mission is to plan and create spaces for people with a prudent use of resources
                                     while maintaining a high-level end product of desired aesthetics, function and value
                                 </p>
                             </div>
                             <div class="col-lg-12">
-                                <h3>Philosophy</h3>
-                                <h5> <code>Aesthetics</code> </h5>
+                                <h3 class="text-theme"><b>PHILOSOPHY</b></h3>
+                                <h5 class=" text-theme"> <code>Aesthetics</code> </h5>
                                 <p class="text-theme">
                                     Use of responsive and expressive architectural language, character, elements and
                                     materials to fit and improve the vista of the urban scape.
                                 </p>
-                                <h5> <code>Function</code> </h5>
-                                <p>Creation of user-friendly spaces which promote good experiences in the form of vista,
+                                <h5 class=" text-theme"> <code>Function</code> </h5>
+                                <p class=" text-theme">Creation of user-friendly spaces which promote good experiences in the form of vista,
                                     environmental quality, sustainability, thermal comfort etc. It is our purpose to
                                     provide effective and efficient spaces/buildings based on innovative design
                                     principles/fundamentals</p>
-                                <h5> <code>Value</code> </h5>
-                                <p>Increasing physical, social, environmental and economic value by providing spaces or
+                                <h5 class=" text-theme"> <code>Value</code> </h5>
+                                <p class=" text-theme">Increasing physical, social, environmental and economic value by providing spaces or
                                     buildings aimed at meeting client objectives and customer satisfaction as well as a
                                     healthy return on investment.</p>
                             </div>
                             <!--<div class="col-lg-5"></div>
                             <div class="col-lg-5"></div>-->
                             <div class="col-lg-12">
-                                <h3>Value Proposition</h3>
-                                <p>On a project-by-project basis, we maximize the value of the built environment by
+                                <h3 class=" text-theme"><b>VALUE PROPOSITION</b></h3>
+                                <p class=" text-theme">On a project-by-project basis, we maximize the value of the built environment by
                                     infusing creative building and business solutions with necessary function and
                                     aesthetics through our creative design team, modern technology and practical
                                     knowledge of the industry</p>
@@ -366,12 +384,12 @@
                         </div>
                     </div>
                     <div class="slider-area team-slider3">
-                        <div class="swiper th-slider" id="teamSlider3"
+                        <div class="swiper th-slider" id="teamSlider3a"
                             data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrappers">
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <div class="th-team team-card style3">
+                                    <div class="th-team team-card style3" style="margin-bottom: 20px;">
                                         <!--<div class="img-wrap">
                                             <div class="team-img">
                                                 <img src="assets/img/jib3.jpeg" alt="Team">
@@ -393,6 +411,14 @@
                                                         src="assets/img/icon/arrow-right.svg" alt="img"></a>
                                             </div>
                                         </div>-->
+                                        <div class="team-card-content">
+                                            <div class="media-left">
+                                                <h3 class="box-title"><a href="team-details.html">Jibril Ojolowo</a>
+                                                </h3>
+                                            </div>
+                                            <a class="icon-btn" href="tel:09876543210"><img
+                                                    src="assets/img/icon/phone.svg" alt="img"></a>
+                                        </div>
                                         <div class="img-wraps">
                                             <div class="team-imgs">
                                                 <span>
@@ -415,19 +441,15 @@
                                         </div>
                                         <div class="team-card-content">
                                             <div class="media-left">
-                                                <h3 class="box-title"><a href="team-details.html">Jibril Ojolowo</a>
-                                                </h3>
                                                 <span class="team-desig">Director</span>
                                             </div>
-                                            <a class="icon-btn" href="tel:09876543210"><img
-                                                    src="assets/img/icon/phone.svg" alt="img"></a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <div class="th-team team-card style3">
+                                    <div class="th-team team-card style3" style="margin-bottom: 20px;">
                                         <!--<div class="img-wrap">
                                             <div class="team-img">
                                                 <img src="assets/img/jib2.jpeg" alt="Team">
@@ -449,6 +471,14 @@
                                                         src="assets/img/icon/arrow-right.svg" alt="img"></a>
                                             </div>
                                         </div>-->
+                                        <div class="team-card-content">
+                                            <div class="media-left">
+                                                <h3 class="box-title"><a href="team-details.html">Taiwo Adediran</a>
+                                                </h3>
+                                            </div>
+                                            <a class="icon-btn" href="tel:09876543210"><img
+                                                    src="assets/img/icon/phone.svg" alt="img"></a>
+                                        </div>
                                         <div class="img-wraps">
                                             <div class="team-imgs">
                                                 <span>
@@ -469,19 +499,15 @@
                                         </div>
                                         <div class="team-card-content">
                                             <div class="media-left">
-                                                <h3 class="box-title"><a href="team-details.html">Taiwo Adediran</a>
-                                                </h3>
                                                 <span class="team-desig">Director</span>
                                             </div>
-                                            <a class="icon-btn" href="tel:09876543210"><img
-                                                    src="assets/img/icon/phone.svg" alt="img"></a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Single Item -->
                                 <div class="swiper-slide">
-                                    <div class="th-team team-card style3">
+                                    <div class="th-team team-card style3" style="margin-bottom: 20px;">
                                         <!--<div class="img-wrap">
                                             <div class="team-img">
                                                 <img src="assets/img/tai2.jpeg" alt="Team">
@@ -503,6 +529,14 @@
                                                         src="assets/img/icon/arrow-right.svg" alt="img"></a>
                                             </div>
                                         </div> -->
+                                        <div class="team-card-content">
+                                            <div class="media-left">
+                                                <h3 class="box-title"><a href="team-details.html">'Deji Sanyaolu</a>
+                                                </h3>
+                                            </div>
+                                            <a class="icon-btn" href="tel:09876543210"><img
+                                                    src="assets/img/icon/phone.svg" alt="img"></a>
+                                        </div>
                                         <div class="img-wraps">
                                             <div class="team-imgs">
                                                 <span>
@@ -519,12 +553,8 @@
                                         </div>
                                         <div class="team-card-content">
                                             <div class="media-left">
-                                                <h3 class="box-title"><a href="team-details.html">'Deji Sanyaolu</a>
-                                                </h3>
                                                 <span class="team-desig">Secretary</span>
                                             </div>
-                                            <a class="icon-btn" href="tel:09876543210"><img
-                                                    src="assets/img/icon/phone.svg" alt="img"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -708,10 +738,10 @@
 
                             </div>
                         </div>
-                        <button data-slider-prev="#teamSlider3" class="slider-arrow style6 slider-prev"><img
+                        <!--<button data-slider-prev="#teamSlider3" class="slider-arrow style6 slider-prev"><img
                                 src="assets/img/icon/arrow-left.svg" alt="icon"></button>
                         <button data-slider-next="#teamSlider3" class="slider-arrow style6 slider-next"><img
-                                src="assets/img/icon/arrow-right.svg" alt="icon"></button>
+                                src="assets/img/icon/arrow-right.svg" alt="icon"></button>-->
                     </div>
                 </div>
             </section>
@@ -728,7 +758,7 @@
                                                     src="./assets/img/Screenshot-2024-03-23-at-15.56.15-300x269.png"
                                                     style="width: 60px; height: 60px;" alt="Regeneration DDC"></a>
                                         </div>
-                                        <p class="about-text">Regeneration is a full-service design, construction and
+                                        <p class="text-theme u-text-variant" style="color: white !important;">Regeneration is a full-service design, construction and
                                             development firm using our principles of value addition and sustainability
                                             to provide innovative and cutting-edge products and services</p>
                                     </div>
@@ -741,9 +771,9 @@
                                         <div class="info-box_text">
                                             <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
                                             </div>
-                                            <div class="details">
-                                                <p>31, Association Avenue, </p>
-                                                <p>Ilupeju, Lagos, Nigeria</p>
+                                            <div class="details" >
+                                                <p class="text-theme" style="color: white !important;">31, Association Avenue, </p>
+                                                <p class="text-theme" style="color: white !important;">Ilupeju, Lagos, Nigeria</p>
                                             </div>
                                         </div>
                                         <div class="info-box_text">
@@ -751,7 +781,7 @@
                                                 <img src="assets/img/icon/phone.svg" alt="img">
                                             </div>
                                             <div class="details">
-                                                <p><a href="tel:+234 809 437 6516" class="info-box_link">0809 437
+                                                <p><a href="tel:+234 809 437 6516" class="info-box_link text-theme" style="color: white !important;">0809 437
                                                         6516</a></p>
                                                 <!--<p><a href="tel:+2348039322248" class="info-box_link">+234 803 932 2248</a></p>-->
                                             </div>
@@ -762,7 +792,7 @@
                                             </div>
                                             <div class="details">
                                                 <p><a href="mailto:info@regenerationddc.com"
-                                                        class="info-box_link">info@regenerationddc.com</a></p>
+                                                        class="info-box_link text-theme"  style="color: white !important;">info@regenerationddc.com</a></p>
                                                 <!--<p><a href="mailto:support24@realar.com" class="info-box_link">support24@realar.com</a></p>-->
                                             </div>
                                         </div>
@@ -775,28 +805,30 @@
                                     <h3 class="widget_title">Invest with Regeneration</h3>
                                     <div class="menu-all-pages-container">
                                         <ul class="menu">
-                                            <li><a href="project-partnership.html">Project Partnership</a></li>
-                                            <li><a href="co-investment.html">Co-Investment</a></li>
-                                            <li><a href="co-ownership.html">Co-Ownership</a></li>
-                                            <li><a href="joint-venture.html">Joint Venture</a></li>
+                                            <li><a href="project-partnership.html" class="text-theme" style="color: white !important;">Project Partnership</a></li>
+                                            <li><a href="co-investment.html" class="text-theme" style="color: white !important;">Co-Investment</a></li>
+                                            <li><a href="co-ownership.html" class="text-theme" style="color: white !important;">Co-Ownership</a></li>
+                                            <li><a href="joint-venture.html" class="text-theme" style="color: white !important;">Joint Venture</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <!--<div class="col-md-6 col-xl-auto">
+                            <div class="col-md-6 col-xl-auto">
                                 <div class="widget widget_nav_menu footer-widget">
-                                    <h3 class="widget_title">Useful Link</h3>
+                                    <h3 class="widget_title">Subscribe to Our Newsletter</h3>
                                     <div class="menu-all-pages-container">
-                                        <ul class="menu">
-                                            <li><a href="aboutus.html">About us</a></li>
-                                            <li><a href="projects.html">Featured Properties</a></li>
-                                            <li><a href="service.html">Our Best Services</a></li>
-                                            <li><a href="contactus.html">Request Visit</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                        </ul>
+
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="search"
+                                                    placeholder="Your Email Address">
+                                            </div>
+                                            <input type="button" class="btn btn-primary" value="Subscribe" id="subscribe">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+                            <!--
                             <div class="col-md-6 col-xl-auto">
                                 <div class="widget widget_nav_menu footer-widget">
                                     <h3 class="widget_title">Explore</h3>
@@ -818,9 +850,9 @@
                     <div class="container">
                         <div class="row gy-3 align-items-center">
                             <div class="col-lg-6">
-                                <p class="copyright-text">
-                                    Copyright <i class="fal fa-copyright"></i> 2024 <a href="index.html">Regeneration
-                                    </a>, All rights reserved.</p>
+                                <span class="copyright-text text-theme"  style="color: white !important;">
+                                    Copyright <i class="fal fa-copyright"></i> 2024 <a href="./">Regeneration
+                                    </a>, All rights reserved.</span>
                             </div>
                             <div class="col-lg-6">
                                 <div class="th-social justify-content-lg-end justify-content-center">
@@ -1020,6 +1052,11 @@
     <script src="./assets/js/helper.min.js?ver=6.13.0" id="element-pack-helper-js"></script>
     <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap-autocomplete.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script>
         $(function () {
