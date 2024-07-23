@@ -44,6 +44,14 @@ app.get("/data/regddc.json", (req, res) => {
     res.sendFile(path.resolve(__dirname, "data/regddc.json"));
 });
 
+app.get("/services.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "service.html"));
+});
+
+app.get("/tp.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "tp.html"));
+});
+
 
 app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "index.html"));
