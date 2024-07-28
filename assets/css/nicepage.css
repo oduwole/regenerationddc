@@ -42345,7 +42345,7 @@
           p:not(.u-text-variant)
           {
           font-size: 1.125rem;
-          margin-top: 20px;
+          /*margin-top: 20px;*/
           margin-bottom: 20px;
           line-height: 1.6;
           }

@@ -7528,7 +7528,7 @@ ol.wp-block-rss {
 }
 
 .th-widget-contact .info-box_text .details {
-  margin-top: -0.3em;
+  /*margin-top: -0.3em;*/
 }
 
 .th-widget-contact .info-box_text .details p {
@@ -11296,8 +11296,8 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 .info-box_text {
   display: block;
   color: var(--body-color);
-  margin-top: -0.45em;
-  margin-bottom: -0.45em;
+  /*margin-top: -0.45em;
+  margin-bottom: -0.45em;*/
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
