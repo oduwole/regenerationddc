@@ -42308,11 +42308,19 @@
           }
           h4
           {
-          font-weight: 400;
+          /*font-weight: 400;
           font-size: 1.5rem;
           line-height: 1.2;
           margin-top: 20px;
-          margin-bottom: 20px;
+          margin-bottom: 20px;*/
+          font-family: var(--uicore-header--menu-typo-f, "Inter");
+    font-weight: var(--uicore-header--menu-typo-w, "600");
+    line-height: var(--uicore-header--menu-typo-h, "1.2");
+    letter-spacing: var(--uicore-header--menu-typo-ls, "-0.027em");
+    text-transform: var(--uicore-header--menu-typo-t, "none");
+    font-style: var(--uicore-header--menu-typo-st, "normal");
+    font-size: var(--uicore-header--menu-typo-s, "10px");
+    color: inherit;
           }
           h5
           {

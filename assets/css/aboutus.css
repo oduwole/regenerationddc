@@ -4424,7 +4424,7 @@ hr.title-line {
   text-transform: var(--uicore-header--menu-typo-t, "none");
   font-style: var(--uicore-header--menu-typo-st, "normal");
   font-size: 16px;
-  /* font-size: var(--uicore-header--menu-typo-s, "8px");*/
+  /*font-size: var(--uicore-header--menu-typo-s, "10px");*/
   color: inherit;
 }
 
