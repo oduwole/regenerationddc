@@ -102,7 +102,9 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #1C2D37;
+  /*--theme-color: #1C2D37;*/
+  --theme-color-black: #000000;
+  --theme-color: #757575;
   --theme-color2: #EED26E;
   --title-color: #0D0D0C;
   --title-dark: #364440;
@@ -114,7 +116,8 @@ Version: 1.0.0
   --black-color3: #1A1A1A;
   --gray-color: #DDE8DD;
   --white-color: #ffffff;
-  --light-color: #A4B5BA;
+  /*--light-color: #A4B5BA;*/
+  --light-color: #757575;
   --yellow-color: #E2B93B;
   --success-color: #27AE60;
   --error-color: #EB5757;
@@ -4412,7 +4415,8 @@ hr.title-line {
 
 /*------------------- 3.8. Text Color -------------------*/
 .text-theme {
-  color: var(--theme-color) !important;
+  /*color: var(--theme-color) !important;*/
+  color: var(--theme-color-black) !important;
   font-family: var(--uicore-header--menu-typo-f, "Inter");
   font-weight: var(--uicore-header--menu-typo-w, "600");
   line-height: var(--uicore-header--menu-typo-h, "1.2");
@@ -14222,6 +14226,10 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+.btn-search {
+  background-color: var(--e-global-color-uicore_primary);
+}
+
 /* Contact Page 1---------------------------------- */
 .about-contact-grid.style2 {
   /*background: var(--theme-color);*/
@@ -16117,7 +16125,7 @@ span.select2-selection.select2-selection--single:focus {
 
 /* Team Details ---------------------------------- */
 .about-card_title {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 600;
   /* Small devices */
   /* Extra small devices */
@@ -16125,13 +16133,13 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 767px) {
   .about-card_title {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 575px) {
   .about-card_title {
-    font-size: 24px;
+    font-size: 19px;
   }
 }
 

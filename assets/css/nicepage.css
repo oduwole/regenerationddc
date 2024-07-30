@@ -35460,7 +35460,7 @@
     border-color: #ffffff !important;
     color: #ffffff !important;
     /*background-color: transparent !important;*/
-    background-color: #0737b0 !important;
+    background-color: var(--e-global-color-uicore_primary) !important;
     border-radius: 10px !important;
   }
   .u-button-style.u-border-white:hover,
