@@ -18362,7 +18362,7 @@
     font-family: 'Titillium Web', sans-serif !important;
   }
   .u-font-merriweather.u-custom-font {
-    font-family: Merriweather, serif !important;
+    /*font-family: Merriweather, serif !important;*/
   }
   .u-font-roboto-slab.u-custom-font {
     font-family: 'Roboto Slab', serif !important;
@@ -42303,7 +42303,7 @@
           font-weight: 400;
           font-size: 2.25rem;
           line-height: 1.2;
-          margin-top: 20px;
+          margin-top: -10px;
           margin-bottom: 20px;
           }
           h4
