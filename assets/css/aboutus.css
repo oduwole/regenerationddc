@@ -4417,7 +4417,7 @@ hr.title-line {
 .text-theme {
   /*color: var(--theme-color) !important;*/
   color: var(--theme-color-black) !important;
-  font-family: var(--uicore-header--menu-typo-f, "Inter");
+  font-family: var(--uicore-header--menu-typo-f, "Outfit");
   font-weight: var(--uicore-header--menu-typo-w, "600");
   line-height: var(--uicore-header--menu-typo-h, "1.2");
   letter-spacing: var(--uicore-header--menu-typo-ls, "-0.027em");
