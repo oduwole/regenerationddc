@@ -142,7 +142,9 @@ body {
 }
 
 body {
-  font-family: var(--body-font);
+
+  font-family: var(--uicore-header--menu-typo-f, "Outfit") !important;
+  /*font-family: var(--body-font);*/
   font-size: 16px;
   font-weight: 400;
   color: var(--body-color);
@@ -5759,7 +5761,8 @@ a.text-theme:hover,
   position: relative;
   font-size: 24px;
   font-weight: 600;
-  font-family: var(--body-font);
+  /*font-family: var(--body-font);*/
+  font-family: var(--uicore-header--menu-typo-f, "Outfit") !important;
   color: var(--white-color);
   line-height: 1em;
   padding-bottom: 20px;
