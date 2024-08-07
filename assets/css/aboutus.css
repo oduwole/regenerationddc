@@ -11,6 +11,11 @@ p span {
   color: inherit;
 }
 
+a {
+
+  font-family: var(--uicore-header--menu-typo-f, "Outfit") !important;
+}
+
 .overflow-hidden{overflow:hidden!important}
 @charset "UTF-8";
 /*
