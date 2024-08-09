@@ -42312,8 +42312,9 @@
           font-size: 1.5rem;
           line-height: 1.2;
           margin-top: 20px;
-          margin-bottom: 20px;*/
-          font-family: var(--uicore-header--menu-typo-f, "Inter");
+          margin-bottom: 20px;
+          font-family: var(--uicore-header--menu-typo-f, "Inter");*/
+  font-family: var(--uicore-header--menu-typo-f, "Outfit") !important;
     font-weight: var(--uicore-header--menu-typo-w, "600");
     line-height: var(--uicore-header--menu-typo-h, "1.2");
     letter-spacing: var(--uicore-header--menu-typo-ls, "-0.027em");
