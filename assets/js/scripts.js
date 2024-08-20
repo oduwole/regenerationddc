@@ -21,6 +21,24 @@ $.fn.serializeObject = function() {
     return o;
 };
 $(function () {
+
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
     var form = ".ajax-contact";
     var invalidCls = "is-invalid";
     var $email = '[name="email"]';
@@ -61,11 +79,11 @@ $(function () {
                     formMessages.addClass("error");
                     // Set the message text.
                     if (data.responseText !== "") {
-                        formMessages.html(data.responseText);
+                        //formMessages.html(data.responseText);
+                        toastr.success('request successfully submitted');
                     } else {
-                        formMessages.html(
-                            "Oops! An error occured and your message could not be sent."
-                        );
+                        //formMessages.html("Oops! An error occured and your message could not be sent.");
+                        toastr.error("Oops! An error occured and your message could not be sent.");
                     }
                 });
         }
@@ -110,11 +128,11 @@ $(function () {
                     formMessages.addClass("error");
                     // Set the message text.
                     if (data.responseText !== "") {
-                        formMessages.html(data.responseText);
+                        //formMessages.html(data.responseText);
+                        toastr.success('request successfully submitted');
                     } else {
-                        formMessages.html(
-                            "Oops! An error occured and your message could not be sent."
-                        );
+                        //formMessages.html( "Oops! An error occured and your message could not be sent." );
+                        toastr.error("Oops! An error occured and your message could not be sent.");
                     }
                 });
         }
@@ -207,7 +225,7 @@ $(function () {
         jQuery
         .ajax({
             //url: $(form).attr("action"),
-            url: 'sendmail',
+            url: 'subscribe',
             data: formData,
             type: "POST",
         })
@@ -223,5 +241,10 @@ $(function () {
             toastr.error('error sending email to ' + email_addr + '');
           
         });
+    })
+
+    $('.btn-search').click(function(e){
+        var input = $('#search').val();
+        console.log(input)
     })
 })
