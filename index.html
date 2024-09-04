@@ -117,7 +117,9 @@
     <link rel='stylesheet' href='./assets/css/nicepage.css' media='all' />
     <link rel='stylesheet' href='./assets/css/page-slider.css' media='all' />
     <link rel='stylesheet' href='./assets/css/magnific-popup.min.css' media='all' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .img-fluid {
             height: 40px;
@@ -142,7 +144,7 @@
                 min-height: 580px !important;
             }
 
-             svg{
+            svg {
                 position: relative;
                 margin-top: 90%;
             }
@@ -510,7 +512,7 @@
                             <li data-u-target="#carousel_cccc" class="u-grey-30" data-u-slide-to="1"></li>
                         </ol>
                         <div class="u-carousel-inner" role="listbox">
-                            <div class="u-active u-black u-carousel-item u-clearfix u-section-1-1">
+                            <div class="u-active u-black u-carousel-item u-clearfix u-section-1-1" id="folajcourt">
                                 <div class="u-clearfix u-sheet u-sheet-1" style="margin-left: 3%;">
                                     <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1"
                                         style="background-color:#ffffff; border-radius: 20px;">
@@ -598,7 +600,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="u-black u-carousel-item u-clearfix u-section-1-2">
+                            <div class="u-black u-carousel-item u-clearfix u-section-1-2" id="rgcove">
                                 <div class="u-clearfix u-sheet u-sheet-1" style="margin-left: 3%;">
                                     <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1"
                                         style="background-color:#ffffff; border-radius: 20px;">
@@ -681,7 +683,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="u-black u-carousel-item u-clearfix u-section-1-3">
+                            <div class="u-black u-carousel-item u-clearfix u-section-1-3" id="aw1court">
                                 <div class="u-clearfix u-sheet u-sheet-1" style="margin-left: 3%;">
                                     <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1"
                                         style="background-color:#ffffff; border-radius: 20px;">
@@ -774,7 +776,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="u-black u-carousel-item u-clearfix u-section-1-4">
+                            <div class="u-black u-carousel-item u-clearfix u-section-1-4" id="avecourt">
                                 <div class="u-clearfix u-sheet u-sheet-1" style="margin-left: 3%;">
                                     <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1"
                                         style="background-color:#ffffff; border-radius: 20px;">
@@ -1288,8 +1290,7 @@
                             <div class="col-lg-6">
                                 <div class="th-social justify-content-lg-end justify-content-center">
                                     <!--<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>-->
-                                    <a href="https://www.twitter.com/@regenerationddc"><i
-                                            class="fab fa-x"></i></a>
+                                    <a href="https://www.twitter.com/@regenerationddc"><i class="fab fa-x"></i></a>
                                     <a href="https://www.youtube.com/@regenerationddc"><i
                                             class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/regeneration.ddc"><i
@@ -1498,8 +1499,8 @@
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script src="assets/js/formToJson.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
-      integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type='text/javascript'>
 
     </script>
@@ -1517,7 +1518,15 @@
                 midClick: true,
             });
             $('[name=subject').attr('disabled', true);
+
         })
+        var hash = window.location.hash.substring(1);
+        if (hash != '') {
+            if (hash == 'rgcove' || hash == 'aw1court' || hash == 'avecourt' || hash == 'folajcourt') {
+                $('.u-carousel-item').removeClass('u-active');
+                $('#' + hash).addClass('u-active');
+            }
+        }
     </script>
 
 </body>

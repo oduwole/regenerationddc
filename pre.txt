@@ -1,0 +1,111 @@
+<div class="property-listing">
+                                <div class="property-listing-grid">
+                                    <div class="thumbslider-container premium-gold">
+
+                                        <span class="camera-icon"><i class="fa-solid fa-camera"></i> 12</span>
+                                        <div class="slider slider-content slick-initialized slick-slider slick-dotted">
+                                            <div class="slick-list draggable">
+                                                <div class="slick-track"
+                                                    style="opacity: 1; width: 255px; transform: translate3d(0px, 0px, 0px);">
+                                                    <div class="slick-slide slick-current slick-active"
+                                                        data-slick-index="0" aria-hidden="false" tabindex="0"
+                                                        role="tabpanel" id="slick-slide00"
+                                                        aria-describedby="slick-slide-control00" style="width: 255px;">
+                                                        <a href="/property/2-bedroom-flat-apartment-for-sale-lagos-state-housing-estate-ibeshe-ikorodu-lagos-1LNSQ"
+                                                            tabindex="0"> <img
+                                                                src="https://images.propertypro.ng/large/newly-built-2-bedroom-flat-in-an-estate-6Ajt4nogtVibsOPhWmh1.jpg"
+                                                                data-src="https://images.propertypro.ng/large/newly-built-2-bedroom-flat-in-an-estate-6Ajt4nogtVibsOPhWmh1.jpg"
+                                                                title="2 bedroom Flat / Apartment for sale Lagos State Housing Estate Ibeshe Ikorodu Lagos"
+                                                                alt="2 bedroom Flat / Apartment for sale Lagos State Housing Estate Ibeshe Ikorodu Lagos">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="slick-dots" role="tablist">
+                                                <li class="slick-active" role="presentation"><button type="button"
+                                                        role="tab" id="slick-slide-control00"
+                                                        aria-controls="slick-slide00" aria-label="1 of 1" tabindex="0"
+                                                        aria-selected="true">1</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="property-listing-content">
+                                        <div class="pl-title-grid position-relative">
+                                            <div class="pl-title">
+                                                <h3> <a
+                                                        href="/property/2-bedroom-flat-apartment-for-sale-lagos-state-housing-estate-ibeshe-ikorodu-lagos-1LNSQ">Newly
+                                                        Built 2 Bedroom Flat</a> </h3>
+                                                <p>Lagos State Housing Estate Ibeshe Ikorodu Lagos</p>
+                                                <h6> <a
+                                                        href="/property/2-bedroom-flat-apartment-for-sale-lagos-state-housing-estate-ibeshe-ikorodu-lagos-1LNSQ">Newly
+                                                        Built 2 Bedroom Flat</a> / <a href="#">Flat Apartment FOR
+                                                        Sale</a></h6>
+                                            </div>
+
+                                            <div class="pl-price">
+                                                <h3>₦ 27,000,000</h3>
+                                                <p>PID : 1LNSQ</p>
+                                                <h6> 2 Beds 2 Baths </h6>
+                                            </div>
+
+                                            <div class="saved-log">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                                <a href="/profile/add-favorite/1460541"> <i
+                                                        class="fa-regular fa-heart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="pl-badge-grid">
+                                            <div class="pl-badge-left">
+                                                <ul>
+                                                    <li class="new-listing">Free Wifi</li>
+                                                    <li class="new-listing">24 Hours Security</li>
+                                                    <li class="new-listing">Front Desk Service</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pl-badge-right">
+                                                <div class="p-badge main-badge">
+                                                    Premium
+                                                    <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.46 0.904062L0.793333 2.9774C0.313333 3.19073 0 3.67073 0 4.1974V7.33073C0 11.0307 2.56 14.4907 6 15.3307C9.44 14.4907 12 11.0307 12 7.33073V4.1974C12 3.67073 11.6867 3.19073 11.2067 2.9774L6.54 0.904062C6.2 0.750729 5.8 0.750729 5.46 0.904062ZM4.19333 10.8574L2.46667 9.13073C2.20667 8.87073 2.20667 8.45073 2.46667 8.19073C2.72667 7.93073 3.14667 7.93073 3.40667 8.19073L4.66667 9.44406L8.58667 5.52406C8.84667 5.26406 9.26667 5.26406 9.52667 5.52406C9.78667 5.78406 9.78667 6.20406 9.52667 6.46406L5.13333 10.8574C4.88 11.1174 4.45333 11.1174 4.19333 10.8574Z"
+                                                            fill="#8D2626"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="pl-footer d-flex justify-content-between align-items-center">
+                                            <div class="pl-footer-left">
+                                                <a href="/agent/bashir3">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="https://images.propertypro.ng/logo/TOT2WXgTyjRcBS10zam0.jpg"
+                                                                alt="DE-BASH PROPERTY VENTURE">
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2">
+                                                            DE-BASH PROPERTY
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="pl-footer-right">
+                                                <a href="tel: 08026452869"
+                                                    onclick="if (!window.__cfRLUnblockHandlers) return false; doSubmitReq('P', '1460541', '43111')">
+                                                    <img src="/assets/new_public/images/4f807597f5934732f5d6b2ca6678cbe8-Call.svg"
+                                                        alt=""> </a>
+                                                <a href="whatsapp://send?text=Hi, I will like to get more information on this property you listed on PropertyPro.ng https://www.propertypro.ng/property/2-bedroom-flat-apartment-for-sale-lagos-state-housing-estate-ibeshe-ikorodu-lagos-1LNSQ&amp;phone=2347059749483"
+                                                    target="_blank" class="ms-2"
+                                                    onclick="if (!window.__cfRLUnblockHandlers) return false; doSubmitReq('W', '1460541','43111')">
+                                                    <img src="/assets/new_public/images/f607bb07728552d3b6ca6cb065d2df35-WA.svg"
+                                                        alt=""> </a>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>

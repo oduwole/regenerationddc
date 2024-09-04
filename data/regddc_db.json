@@ -1,0 +1,80 @@
+[
+    {
+            "name":"Rogers Cove",
+            "url": "index.html#rgcove",
+            "text":"The Rogers Cove comprises 6 Nos Four Bedrooom Townhouses. <br /> Features also include a Swimming Pool and Green Areas",
+            "url_text":"The Rogers Cove comprises 6 Nos Four Bedrooom Townhouses. <br /> Features also include a Swimming Pool and Green Areas",
+            "img_url":"assets/img/Rogers Cove/v - 1.jpg",
+            "alt":"Rogers Cove"
+    },{
+        "name":"Folajomi Court",
+            "url": "index.html#folajcourt",
+            "text":"",
+            "url_text":"The Folajomi Court comprises a total of 44 total Apartments 22 Nos Three Bedrooom Apartments with attached BQ. <br />22 Nos Two Bedrooom Apartments",
+            "img_url":"assets/img/Rogers Cove/v - 1.jpg",
+            "alt":"Folajomi Court"
+        
+    },{
+        "name":"AW1 Court",
+            "url": "index.html#folajcourt",
+            "text":"",
+            "url_text":"",
+            "img_url":"assets/img/AW1 Court/5.jpg",
+            "alt":"AW1 Court"
+        
+    },{
+        "name":"Avenue Court",
+            "url": "index.html#avecourt",
+            "text":"",
+            "url_text":"The Avenue Court comprises 12 Units of Three Bedrooom Apartments.",
+            "img_url":"assets/img/Avenue Court/IMG_3274.jpeg",
+            "alt":"Avenue Court"
+        
+    },{
+        "name":"Co-Investment",
+            "url": "co-investment.html",
+            "text":"",
+            "url_text":"This scheme affords you the opportunity to Invest in real estate with your friends, family or partners. It involves a group of entities (Friends, cooperatives, investment clubs) pulling funds together for a real estate investment venture",
+            "img_url":"assets/img/coinvestment.png",
+            "alt":""
+        
+    },{
+        "name":"Joint Venture",
+            "url": "joint-venture.html",
+            "text":"",
+            "url_text":"",
+            "img_url":"assets/img/jv.jpeg",
+            "alt":""
+        
+    },{
+        "name":"Project Partnership",
+            "url": "project-partnership.html",
+            "text":"",
+            "url_text":"",
+            "img_url":"assets/img/poject-partnership.jpeg",
+            "alt":""
+        
+    },{
+        "name":"Co-Ownership",
+            "url": "co-ownership.html",
+            "text":"",
+            "url_text":"This scheme affords you the opportunity to Invest in real estate projects by buying lots/ shares of the project. New projects will be broken into lots at at attractive entry prices and an investor can buy multiple lots.",
+            "img_url":"assets/img/co-ownership.jpeg",
+            "alt":""
+        
+    },{
+        "name":"Architecture",
+            "url": "",
+            "text":"",
+            "url_text":"",
+            "alt":""
+        
+    },{
+        "name":"Construction",
+            "url": "",
+            "text":"",
+            "url_text":"",
+            "alt":""
+        }
+    
+]

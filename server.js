@@ -24,6 +24,10 @@ app.get("/projects.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "projects.html"));
 });
 
+app.get("/search.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "search.html"));
+});
+
 app.get("/co-investment.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "co-investment.html"));
 });
@@ -42,6 +46,10 @@ app.get("/Joint-Venture.html", (req, res) => {
 
 app.get("/data/regddc.json", (req, res) => {
     res.sendFile(path.resolve(__dirname, "data/regddc.json"));
+});
+
+app.get("/data/regddc_db.json", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "data/regddc_db.json"));
 });
 
 app.get("/services.html", (req, res) => {

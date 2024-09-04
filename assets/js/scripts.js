@@ -246,5 +246,8 @@ $(function () {
     $('.btn-search').click(function(e){
         var input = $('#search').val();
         console.log(input)
+        window.location.href = 'search.html?q='+ input;
     })
+
+
 })
