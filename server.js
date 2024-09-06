@@ -60,6 +60,18 @@ app.get("/rogerscove.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "rogerscove.html"));
 });
 
+app.get("/festcourt.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "festcourt.html"));
+});
+
+app.get("/no4.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "no4.html"));
+});
+
+app.get("/alvarrow.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "alvarrow.html"));
+});
+
 app.get("/data/regddc.json", (req, res) => {
     res.sendFile(path.resolve(__dirname, "data/regddc.json"));
 });
