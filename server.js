@@ -44,6 +44,22 @@ app.get("/Joint-Venture.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "Joint-Venture.html"));
 });
 
+app.get("/avenuecourt.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "avenuecourt.html"));
+});
+
+app.get("/aw1court.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "aw1court.html"));
+});
+
+app.get("/folajomi.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "folajomi.html"));
+});
+
+app.get("/rogerscove.html", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "rogerscove.html"));
+});
+
 app.get("/data/regddc.json", (req, res) => {
     res.sendFile(path.resolve(__dirname, "data/regddc.json"));
 });

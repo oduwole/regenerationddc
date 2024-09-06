@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Folajomi Court Gallery</title>
+
+    <!-- ~~~~ Grid Overflow CSS library, it creates responsive grid layout for thumbnails ~~~~  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/story-show-gallery@3/dist/GridOverflow3D.min.css" />
+    <!-- Story Show Gallery on click opens images into full screen lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/story-show-gallery@3/dist/ssg.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--<base href="https://roman-flossler.github.io/StoryShowGallery/photos/" target="_blank" />-->
+    <base href="/assets/img/" target="_blank" />
+    <style>
+      /* configuration of the Grid Overflow  */
+      .gridOverflow {
+        --gridGap: 1px;
+        --itemMinWidth: 210px;
+        --itemAspectRatio: 1;
+        --itemRounding: 6px;
+        --linkActionIcon: "⤢";
+        --mobileRowItemsCount: 2;
+      }
+
+      .gridOverflow.go-masonry {
+        --gridGap: 8px;
+        --itemMinWidth: 30%;
+        --itemRounding: 25% 88% 10% 88% / 18% 9px 15% 9px;
+        --linkActionIcon: "»";
+        --masonryItemHeight: 200px;        
+      }
+
+      @media (max-width: 600px) {
+        .gridOverflow.go-masonry {
+          --itemMinWidth: 100%;
+          --masonryItemHeight: 39vw;
+        }
+      }
+
+      /* additional styles for parent element and text styles */
+
+      * {
+        margin: 0;
+        color: #ffffffe0;
+      }
+      main {
+        max-width: 880px;
+        margin: auto;
+        padding: 1.5vw 3vw 3vw 3vw;
+        font-family: "Trebuchet MS", sans-serif;
+        line-height: 1.33em;
+      }
+      .info {
+        background-color: #750015;
+      }
+        body{
+            font-style: var(--uicore-header--menu-typo-st, "Outfit") !important;
+        }
+    </style>
+  </head>
+
+  <body style="min-height: 100vh; background: #d4ddd1">
+    <main>
+      <h3 onclick="getElementById('grid').classList.toggle('go-masonry')">
+        <u style="color: white; font-variant: small-caps; cursor: pointer">🔄 Folajomi Court</u>
+      </h3>
+      <br />
+
+      <!-- parent grid element - gridOverflow class creates responsive square grid from grid's direct children (items) -->
+      <!-- go-3Dfx class adds to each grid item 3D animated effect on mouse over  -->
+      <!-- go-actionIcon class adds to top right corner of grid items some symbol, but only if grid item is <a> tag  -->
+      <!-- go-masonry class switch the layout into masonry mode -->
+
+      <div class="gridOverflow go-3Dfx go-actionIcon ssg fs ssgdim" id="grid">
+        <!-- grid item (grid's direct child) should have go_gridItem class. -->
+        <a href="3-min1-1-scaled.jpg" class="go_gridItem go_gridItem-vertigo">
+          <img
+            src="3-min1-1-scaled.jpg"
+            alt="Sørvágsvatn lake is placed on the edge of Traelanípa cliff. Incredible view."
+          />
+          <span class="go_caption">.vertigo class</span>
+        </a>
+
+        <a href="Folajomi Court/1.jpg" class="go_gridItem">
+          <img
+            src="Folajomi Court/1.jpg"
+            alt="According to National Geographic the Faroe Islands are the world's most attractive archipelago."
+          />
+        </a>
+
+        <a href="Folajomi Court/2.jpg" class="go_gridItem go_gridItem-panorama">
+          <img src="Folajomi Court/2.jpg" alt="There are more sheeps than people and nature is pristine." />
+          <span class="go_caption">.panorama class</span>
+        </a>
+
+        <a href="Folajomi Court/3.jpg" class="go_gridItem go_gridItem-VIP">
+          <img src="Folajomi Court/3.jpg" alt="Colonies of Puffins are nesting on Mykines island." />
+          <span class="go_caption go_caption-full"
+            >.VIP class<br />
+            Colonies of Puffins are nesting on Mykines island.</span
+          >
+        </a>
+
+        <!--<a href="Folajomi Court/4.jpg" class="go_gridItem">
+          <img src="Folajomi Court/4.jpg" alt="Mykines island - it feels like at the end of the world." />
+        </a>
+
+        <a href="Folajomi Court/IMG_3275.jpeg" class="go_gridItem"><img src="Folajomi Court/IMG_3275.jpeg" /></a>
+        <a href="Folajomi Court/IMG_3287-1.jpeg" class="go_gridItem">
+          <img src="Folajomi Court/IMG_3287-1.jpeg" />
+        </a>-->
+
+        <!--<a
+          href="https://github.com/Roman-Flossler/Grid-Overflow"
+          class="go_gridItem go_gridItem-panorama go_gridItem-centered"
+        >
+          <div class="heading" style="background-color: rgb(47, 54, 63)">
+            <div>
+              <h1># Grid Overflow</h1>
+              <br />
+              <p>
+                <span style="font-size: 111%">+ Story Show Gallery lightbox</span> <br />
+                after a click on a thumbnail
+              </p>
+            </div>
+          </div>
+          <span class="go_caption">.panorama class</span>
+        </a>
+
+        <div href="#" class="go_gridItem go_gridItem-centered">
+          <p class="info">
+            <span
+              >Grid Overflow is respon&shy;sive CSS layout with optional animated 3D effect, utility classes and
+              adjustable by CSS variables.
+            </span>
+          </p>
+        </div>
+
+        <div href="#" class="go_gridItem go_gridItem-centered">
+          <p class="info">
+            <span
+              >Pure CSS solution for masonry layout and grid layout, where grid items can be given vertigo,
+              pa&shy;no&shy;rama or VIP class to over&shy;flow into the next cell.
+            </span>
+          </p>
+        </div>-->
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/story-show-gallery@3/dist/ssg.min.js"></script>
+      <script>
+        SSG.cfg.globalAuthorCaption =
+          "<a href='https://roman-flossler.github.io/StoryShowGallery' target='_blank'>Folajomi Court Gallery</a>";
+        SSG.cfg.watermarkText = "🐑 Regeneration&#8202;ddc&#8202;.com";
+        SSG.cfg.watermarkFontSize = 18;
+        SSG.cfg.watermarkOffsetX = 98;
+        SSG.cfg.watermarkOpacity = 0.58;
+      </script>
+    </main>
+  </body>
+</html>
