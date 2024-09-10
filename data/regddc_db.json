@@ -11,14 +11,14 @@
             "url": "index.html#folajcourt",
             "text":"",
             "url_text":"The Folajomi Court comprises a total of 44 total Apartments 22 Nos Three Bedrooom Apartments with attached BQ. <br />22 Nos Two Bedrooom Apartments",
-            "img_url":"assets/img/Rogers Cove/v - 1.jpg",
+            "img_url":"assets/img/Folajomi Court/1.jpg",
             "alt":"Folajomi Court"
         
     },{
         "name":"AW1 Court",
             "url": "index.html#folajcourt",
-            "text":"",
-            "url_text":"",
+            "text":"The AW1 comprises a total of 43 Units of 2 Bedroom Apartments Features also include a Gym, Green Areas etc",
+            "url_text":"The AW1 comprises a total of 43 Units of 2 Bedroom Apartments Features also include a Gym, Green Areas etc",
             "img_url":"assets/img/AW1 Court/5.jpg",
             "alt":"AW1 Court"
         
@@ -27,7 +27,7 @@
             "url": "index.html#avecourt",
             "text":"",
             "url_text":"The Avenue Court comprises 12 Units of Three Bedrooom Apartments.",
-            "img_url":"assets/img/Avenue Court/IMG_3274.jpeg",
+            "img_url":"assets/img/Avenue Court/IMG_5848.jpg",
             "alt":"Avenue Court"
         
     },{
@@ -42,7 +42,7 @@
         "name":"Joint Venture",
             "url": "joint-venture.html",
             "text":"",
-            "url_text":"",
+            "url_text":"Own property in a good location but do not have expertise or resources to build/develop? Sign up for a Joint Venture with Regeneration DDC.",
             "img_url":"assets/img/jv.jpeg",
             "alt":""
         
@@ -50,7 +50,7 @@
         "name":"Project Partnership",
             "url": "project-partnership.html",
             "text":"",
-            "url_text":"",
+            "url_text":"This scheme affords you the opportunity to Invest directly in any of our projects as a financial partner and earn attractive returns, receive interest on invested capital for a fixed tenure (12, 18 or 24 Months) or for the duration of the project(s).",
             "img_url":"assets/img/poject-partnership.jpeg",
             "alt":""
         
@@ -63,14 +63,14 @@
             "alt":""
         
     },{
-        "name":"Architecture",
+        "name":"",
             "url": "",
             "text":"",
             "url_text":"",
             "alt":""
         
     },{
-        "name":"Construction",
+        "name":"",
             "url": "",
             "text":"",
             "url_text":"",
